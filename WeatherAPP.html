@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/WeatherAPP.css">
+	<link rel="shortcut icon" href="fav.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@00&display=swap" rel="stylesheet"> -->
+	<title>Weather APP</title>
+</head>
+
+<body>
+
+
+	<div class="container">
+		<div class="InnerContainer">
+
+			<i class="fas fa-cloud"></i>
+
+			<div style="text-align: center;" id="titleFirst">
+
+				<h3 id="title">
+					<i class="fas fa-street-view"></i>
+					<span style="text-align: center !important; margin-right: -12px;"> {%city%}, {%country%} </span>
+				</h3>
+				<p id="dating">Thu | Sep 16 | 10:14PM</p>
+
+			</div>
+
+			<div style="text-align: center;">
+				<h3 id="temp">{%temp%}&deg;C</h3>
+				<p>{%temp_min%}&deg;C | {%temp_max%}&deg;C</p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div id="div1">
+	</div>
+	<div id="div2">
+	</div>
+	<div id="div3">
+	</div>
+
+
+
+
+	<script src="JS/index.js"></script>
+	<script src="JS/Node.js"></script>
+</body>
+</html>

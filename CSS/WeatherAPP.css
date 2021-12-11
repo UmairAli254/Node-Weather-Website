@@ -1,0 +1,134 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow   : hidden;
+}
+
+.container {
+    height         : 100vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.InnerContainer {
+    background     : linear-gradient(#80daee, #5498d8c2);
+    height         : 30rem;
+    width          : 20rem !important;
+    border-radius  : 10px;
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-around;
+    box-shadow     : 0px 3px 5px 1px rgb(0 0 0 / 35%);
+}
+
+
+.fa-cloud {
+    font-size      : 100px;
+    color          : white;
+    animation      : Cloud-Ani 6s linear infinite alternate;
+    /* justify-self: center; */
+}
+
+@keyframes Cloud-Ani {
+    0% {
+        transform   : translateX(2.5rem);
+        /* font-size: 95px; */
+
+    }
+
+    50% {
+        transform: translateX(-1.5rem);
+    }
+
+    75% {
+        transform: translateY(-1.5rem);
+    }
+
+    100% {
+        transform: translateY(1.5rem);
+    }
+}
+
+#title {
+    font-weight: 700;
+    font-size  : 27px;
+    margin-left: -70px;
+}
+
+#titleFirst {
+    margin-bottom: -90px;
+}
+
+#temp {
+    font-weight: 700;
+    font-size  : 27px;
+}
+
+.fa-street-view {
+    margin-right: 20px;
+    font-size   : 35px;
+    animation   : street 3s linear infinite alternate;
+}
+
+@keyframes street {
+    from {
+        transform: translateX(-10px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+#div1 {
+    background-color: rgba(255, 255, 255, 0.144);
+    width           : 100%;
+    height          : 900px;
+    margin-top      : -345px;
+    animation       : an 0.9s linear infinite alternate;
+    border-radius   : 50%;
+    z-index         : -10;
+}
+
+@keyframes an {
+    from {
+        transform: translateX(30px);
+    }
+}
+
+#div2 {
+
+    background-color: rgba(255, 255, 255, 0.109);
+    width           : 100%;
+    height          : 900px;
+    margin-top      : -890px;
+    animation       : an2 0.9s linear infinite alternate;
+    border-radius   : 50%;
+    z-index         : -20;
+}
+
+@keyframes an2 {
+    from {
+        transform: translateX(30px);
+    }
+}
+
+#div3 {
+
+    background-color: rgba(255, 255, 255, 0.109);
+    width           : 100%;
+    height          : 900px;
+    margin-top      : 891px;
+    animation       : an2 0.1s linear infinite alternate;
+    border-radius   : 50%;
+}
+
+@keyframes an2 {
+    from {
+        transform: translateX(-30px);
+    }
+}
